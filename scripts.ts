@@ -11,7 +11,7 @@ const validarPassword = () => {
         if (userInput.value == userKirsi && userPassword.value == passwordKirsi){
             window.open('./osiita/osiita.html')
         } else {
-            alert('Contraseña o Usuario incorrecto')
+            alert('Contraseña o Usuario incorrecto, intente denuevo')
         }
     }
 
