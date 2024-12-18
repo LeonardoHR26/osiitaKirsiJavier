@@ -1,0 +1,73 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  padding: 15px;
+  text-align: center;
+  background-color: #ffcccb;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Estilización del visor */
+.photo-viewer {
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  display: none;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.nav-button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.nav-button:hover {
+  background: #555;
+}
